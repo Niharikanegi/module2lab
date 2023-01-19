@@ -1,0 +1,30 @@
+:root{
+    /* --main-backgroundColor:blue; */
+    --main-textColor:red;
+    --main-borderSetting: 20px solid black;
+    --childDivWidth:200px;
+    --childDivHeight:100px;
+​
+}
+*{
+    box-sizing:border-box ;
+}
+​
+.parentDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+​
+    background-color: var(--main-backgroundColor, yellow);
+    color: var(--main-textColor);
+    border: var(--main-borderSetting);
+}
+​
+.childDiv{
+    background-color: aliceblue;
+    width: var(--childDivWidth);
+    height: var(--childDivHeight);
+    margin: 5px;
+    border: 5px solid red;
